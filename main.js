@@ -1,29 +1,27 @@
-// Fonction pour calculer le factoriel
-  function calculerFactoriel(nombre) {
-    if (nombre === 0 || nombre === 1) {
-      return 1;
-    } else {
-      return nombre * calculerFactoriel(nombre - 1);
-    }
+function additionner(nombre1, nombre2) {
+    return nombre1 + nombre2;
   }
-
-  // Demander à l'utilisateur un nombre
-  var nombre = prompt("Entrez un nombre pour calculer son factoriel :");
-
-  // Convertir l'entrée en un nombre entier
-  nombre = parseInt(nombre);
-
-  // Vérifier si l'entrée est un nombre valide
-  if (!isNaN(nombre)) {
-    // Calculer le factoriel
-    var factoriel = calculerFactoriel(nombre);
-
-    // Afficher le résultat
-    alert("Le factoriel de " + nombre + " est : " + factoriel);
+  
+  
+  var nombre1 = prompt("Entrez le premier nombre :");
+  var nombre2 = prompt("Entrez le deuxième nombre :");
+  
+  
+  nombre1 = parseInt(nombre1);
+  nombre2 = parseInt(nombre2);
+  
+  
+  if (!isNaN(nombre1) && !isNaN(nombre2)) {
+    
+    var resultat = additionner(nombre1, nombre2);
+  
+    
+    alert("Le résultat de l'addition est : " + resultat);
   } else {
-    // Si l'entrée n'est pas un nombre valide
-    alert("Veuillez entrer un nombre valide.");
+
+    alert("Veuillez entrer des nombres valides.");
   }
+  
 
 
     
